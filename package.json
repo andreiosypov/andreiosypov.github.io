@@ -2,7 +2,7 @@
   "name": "andreiosypov-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andreiosypov.github.io/gallery",
+  "homepage": "https://andreiosypov.github.io/",
   "dependencies": {
     "@elastic/eui": "^43.0.0",
     "@testing-library/jest-dom": "^5.15.1",
