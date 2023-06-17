@@ -7,9 +7,9 @@ This repo is meant to host my [personal site](https://andreiosypov.github.io/). 
 
 ## Framework
 
-React is the framework that the site currently runs in. This framework was chosen due to my work experience with it at Xrathus Inc.
+Vue is the framework that the site currently runs in. This framework was chosen due to my work experience with it at Brazen Animation.
 
-I am hoping to transition the site to Vue as that is the framework that I am using at Brazen Animation, and I have enjoyed using it more than React. I will go into more details on my dev blog as to why I think so.
+The site previously ran on React due to my experience with it at Xrathus Inc., but I have enjoyed using Vue more than React. I will go into more details on my dev blog as to why I think so.
 
 ## Dev Goals
 
