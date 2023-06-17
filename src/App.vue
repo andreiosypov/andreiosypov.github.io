@@ -11,7 +11,8 @@
         </RouterLink>
         <nav>
           <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/artgallery">Gallery</RouterLink>
+          <RouterLink to="/artgallery">Art Gallery</RouterLink>
+          <RouterLink to="/devblog">Dev Blog</RouterLink>
           <RouterLink to="/contact">Contact</RouterLink>
         </nav>
         <RouterView class="content" />

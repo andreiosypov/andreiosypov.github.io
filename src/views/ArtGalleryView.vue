@@ -1,9 +1,7 @@
 <template>
   <div className="gallery-container">
     <h1>Art Gallery</h1>
-    <div>
-      <ArtGallery :images="images" />
-    </div>
+    <ArtGallery :images="images" />
   </div>
 </template>
 

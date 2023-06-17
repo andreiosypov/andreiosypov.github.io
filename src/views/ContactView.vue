@@ -12,6 +12,7 @@
       </p>
       <p>Email: <img src="https://a.storyblok.com/f/138597/229x19/80a2f7c97e/email2.PNG" alt="email" /></p>
       <p>Linkedin: <a href="https://www.linkedin.com/in/andrei-osypov-53566016b">Andrei Osypov</a></p>
+      <p>Github: <a href="https://github.com/andreiosypov/">andreiosypov</a></p>
       <p>Instagram: <a href="https://www.instagram.com/aosypov/">@aosypov</a></p>
     </div>
   </div>
