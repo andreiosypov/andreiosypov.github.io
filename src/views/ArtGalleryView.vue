@@ -1,7 +1,8 @@
 <template>
-  <div className="gallery-container">
+  <div className="gallery-container view">
     <h1>Art Gallery</h1>
-    <ArtGallery :images="images" />
+    <div v-if="loading" class="loader"></div>
+    <ArtGallery v-else :images="images" />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
   data: function () {
     return {
       images: [],
+      loading: false,
     };
   },
   mounted: function () {
@@ -22,6 +24,7 @@ export default {
   },
   methods: {
     getImages: async function () {
+      this.loading = true;
       const storyblokApi = useStoryblokApi();
       const resp = await storyblokApi.get('cdn/stories/', {
         version: 'published',
@@ -35,6 +38,7 @@ export default {
         src: image.content.image.filename,
       }));
       this.images = formattedImages;
+      this.loading = false;
     },
   },
 };

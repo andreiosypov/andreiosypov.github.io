@@ -1,7 +1,8 @@
 <template>
-  <div className="blog-container">
+  <div className="blog-container view">
     <h1>Dev Blog</h1>
-    <Blog :posts="posts" />
+    <div v-if="loading" class="loader"></div>
+    <Blog v-else :posts="posts" />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
   data: function () {
     return {
       posts: [],
+      loading: false,
     };
   },
   mounted: function () {
@@ -22,6 +24,7 @@ export default {
   },
   methods: {
     getPosts: async function () {
+      this.loading = true;
       const storyblokApi = useStoryblokApi();
       const resp = await storyblokApi.get('cdn/stories/', {
         version: 'published',
@@ -37,6 +40,7 @@ export default {
         content: post.content.content,
       }));
       this.posts = formattedPosts;
+      this.loading = false;
     },
   },
 };

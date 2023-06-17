@@ -1,7 +1,7 @@
 <template>
-  <div class="contact">
+  <div class="contact view">
     <h1>Contact Info</h1>
-    <div>
+    <div class="myPhoto">
       <img height="200px" src="https://a.storyblok.com/f/138597/335x333/3bb626f610/andreiosypovcircle.png" alt="mobile" />
     </div>
     <div class="contactInfo">
@@ -26,5 +26,15 @@
   place-items: center;
   flex-direction: column;
   gap: 40px;
+}
+
+.myPhoto {
+  max-width: 50vw;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    gap: 10px;
+  }
 }
 </style>

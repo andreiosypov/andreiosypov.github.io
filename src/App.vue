@@ -2,19 +2,21 @@
   <Suspense>
     <template #default>
       <div>
-        <RouterLink to="/">
-          <div class="appLogoContainer">
-            <span class="AppLogo">
-              <AppLogo />
-            </span>
-          </div>
-        </RouterLink>
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/artgallery">Art Gallery</RouterLink>
-          <RouterLink to="/devblog">Dev Blog</RouterLink>
-          <RouterLink to="/contact">Contact</RouterLink>
-        </nav>
+        <div class="header">
+          <RouterLink to="/" class="noBackground">
+            <div class="appLogoContainer">
+              <span class="AppLogo">
+                <AppLogo />
+              </span>
+            </div>
+          </RouterLink>
+          <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/artgallery">Art Gallery</RouterLink>
+            <RouterLink to="/devblog">Dev Blog</RouterLink>
+            <RouterLink to="/contact">Contact</RouterLink>
+          </nav>
+        </div>
         <RouterView class="content" />
         <FooterLayout />
       </div>
@@ -39,9 +41,17 @@ export default {
 </script>
 
 <style scoped>
-header {
+.header {
   line-height: 1.5;
   max-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--color-border);
+  margin-bottom: 1rem;
+}
+
+.appLogoContainer {
+  padding: 0 1rem;
 }
 
 .AppLogo {
@@ -49,10 +59,9 @@ header {
 }
 
 nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  font-size: 1rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
 }
 
 nav a.router-link-exact-active {
@@ -74,37 +83,15 @@ nav a:first-of-type {
 }
 
 .content {
-  min-height: calc(100vh - 190px);
+  min-height: calc(100vh - 130px);
+  padding: 0 2rem;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
-
-@media (max-width: 1024px) {
   .appLogoContainer {
     display: flex;
     justify-content: center;
@@ -112,6 +99,14 @@ nav a:first-of-type {
 
   nav {
     margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .content {
+    min-height: calc(100vh - 170px);
   }
 }
 </style>
