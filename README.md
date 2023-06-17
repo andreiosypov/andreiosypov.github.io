@@ -15,7 +15,7 @@ I am hoping to transition the site to Vue as that is the framework that I am usi
 
 Goals are listed in terms of priority.
 
-1. Transition the site to Vue 3.
+1. ~~Transition the site to Vue 3.~~
 2. Set up my dev blog on the site.
 3. Build all my own art/games gallery components.
 4. Experiment with Electron
