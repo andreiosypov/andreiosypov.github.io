@@ -24,6 +24,15 @@ const router = createRouter({
       name: 'contact',
       component: () => import('@/views/ContactView.vue'),
     },
+    {
+      path: '/404',
+      name: '404',
+      component: () => import('@/views/NotFoundView.vue'),
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      component: () => import('@/views/NotFoundView.vue'),
+    },
   ],
 });
 
