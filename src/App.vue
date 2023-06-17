@@ -34,13 +34,6 @@ import FooterLayout from './components/FooterLayout.vue';
 export default {
   name: 'App',
   components: { RouterLink, RouterView, AppLogo, FooterLayout },
-  mounted: function () {
-    const path = localStorage.getItem('path');
-    if (path) {
-      localStorage.removeItem('path');
-      this.router.navigate([path]);
-    }
-  },
 };
 </script>
 
