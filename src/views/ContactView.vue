@@ -20,12 +20,10 @@
 <script></script>
 
 <style>
-@media (min-width: 1024px) {
-  .contact {
-    display: flex;
-    place-items: center;
-    flex-direction: column;
-    gap: 40px;
-  }
+.contact {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  gap: 40px;
 }
 </style>

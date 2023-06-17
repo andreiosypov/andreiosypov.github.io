@@ -1,7 +1,7 @@
 @import './base.css';
 
 #app {
-  padding: 2rem;
+  padding: 0 2rem;
   font-weight: normal;
   width: 100%;
 }
@@ -26,6 +26,5 @@ a,
 
   #app {
     display: grid;
-    padding: 0 2rem;
   }
 }

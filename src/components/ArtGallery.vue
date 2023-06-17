@@ -31,4 +31,10 @@ export default {
   height: 100%;
   object-fit: contain;
 }
+
+@media (max-width: 1024px) {
+  .gallery {
+    justify-content: center;
+  }
+}
 </style>

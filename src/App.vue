@@ -3,7 +3,7 @@
     <template #default>
       <div>
         <RouterLink to="/">
-          <div>
+          <div class="appLogoContainer">
             <span class="AppLogo">
               <AppLogo />
             </span>
@@ -34,6 +34,13 @@ import FooterLayout from './components/FooterLayout.vue';
 export default {
   name: 'App',
   components: { RouterLink, RouterView, AppLogo, FooterLayout },
+  mounted: function () {
+    const path = localStorage.getItem('path');
+    if (path) {
+      localStorage.removeItem('path');
+      this.router.navigate([path]);
+    }
+  },
 };
 </script>
 
@@ -100,6 +107,17 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .appLogoContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav {
+    margin-top: 0;
   }
 }
 </style>

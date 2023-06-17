@@ -42,4 +42,11 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@media (max-width: 1024px) {
+  h1 {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+</style>
