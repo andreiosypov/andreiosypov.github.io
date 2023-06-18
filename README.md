@@ -1,6 +1,7 @@
 # Andrei Osypov Website
 
 This repo is meant to host my [personal site](https://andreiosypov.github.io/). The primary goals of the site are:
+
 - To show my capabilities in UI/UX, particularly in the use of Javascript, HTML, and CSS.
 - To host my resume, art gallery, games gallery, and dev blog.
 - To continue developing my dev skills.
