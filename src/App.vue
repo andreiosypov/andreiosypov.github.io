@@ -10,13 +10,13 @@
               </span>
             </div>
           </RouterLink>
-          <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/artgallery">Art Gallery</RouterLink>
-            <RouterLink to="/devblog">Dev Blog</RouterLink>
-            <RouterLink to="/contact">Contact</RouterLink>
-          </nav>
         </div>
+        <nav class="navigationLinks">
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/artgallery">Art Gallery</RouterLink>
+          <RouterLink to="/devblog">Dev Blog</RouterLink>
+          <RouterLink to="/contact">Contact</RouterLink>
+        </nav>
         <RouterView class="content" />
         <FooterLayout />
       </div>
@@ -65,6 +65,8 @@ export default {
 }
 
 nav {
+  position: fixed;
+  right: 0px;
   font-size: 1rem;
   padding: 1rem 0;
   margin-top: 1rem;
@@ -98,7 +100,9 @@ nav a:first-of-type {
   .header {
     position: relative;
     flex-direction: column;
-    height: 130px;
+    height: 80px;
+    border-bottom: none;
+    margin-bottom: 0;
   }
 
   .appLogoContainer {
@@ -107,11 +111,18 @@ nav a:first-of-type {
   }
 
   nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
     margin-top: 0;
-    padding-top: 0;
+    padding-top: 10px;
     width: 100%;
     font-size: 12px;
     text-align: center;
+    border-bottom: 2px solid var(--color-border);
+    margin-bottom: 1rem;
+    background: var(--color-background);
+    box-shadow: 0px 5px 45px var(--color-background);
   }
 
   .content {
