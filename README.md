@@ -21,3 +21,5 @@ Goals are listed in terms of priority.
 3. Build all my own art/games gallery components.
 4. Experiment with Electron.
 5. Improve readme with images.
+
+testing
