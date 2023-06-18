@@ -42,12 +42,18 @@ export default {
 
 <style scoped>
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 90px;
   line-height: 1.5;
   max-height: 100vh;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid var(--color-border);
   margin-bottom: 1rem;
+  background: var(--color-background);
+  box-shadow: 0px 5px 45px var(--color-background);
 }
 
 .appLogoContainer {
@@ -85,11 +91,14 @@ nav a:first-of-type {
 .content {
   min-height: calc(100vh - 130px);
   padding: 0 2rem 100px 2rem;
+  margin-top: 90px;
 }
 
 @media (max-width: 800px) {
   .header {
+    position: relative;
     flex-direction: column;
+    height: 130px;
   }
 
   .appLogoContainer {
@@ -106,6 +115,7 @@ nav a:first-of-type {
   }
 
   .content {
+    margin-top: 0px;
     min-height: calc(100vh - 170px);
   }
 }
