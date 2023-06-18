@@ -30,14 +30,15 @@ export default {
         version: 'published',
         cv: Date.now(),
         per_page: 100,
-        starts_with: 'dev-blog/',
+        starts_with: 'devblog/',
         sort_by: 'created_at:desc',
       });
       const formattedPosts = resp.data.stories.map((post) => ({
         title: post.name,
         summary: post.content.summary,
         image: post.content.image ? post.content.image.filename : '',
-        content: post.content.content,
+        created_at: post.created_at,
+        url: '/devblog/' + post.slug,
       }));
       this.posts = formattedPosts;
       this.loading = false;

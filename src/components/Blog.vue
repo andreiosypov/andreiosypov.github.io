@@ -1,15 +1,15 @@
 <template>
   <div class="blog">
-    <Post v-for="post in posts" :key="post.uid" :post="post" />
+    <PostPreview v-for="post in posts" :key="post.uid" :post="post" />
   </div>
 </template>
 
 <script>
-import Post from '@/components/Post.vue';
+import PostPreview from '@/components/PostPreview.vue';
 
 export default {
   name: 'Blog',
-  components: { Post },
+  components: { PostPreview },
   props: {
     posts: { type: Array, default: () => [] },
   },
@@ -20,7 +20,9 @@ export default {
 .blog {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
+  margin: 0 20vw;
+  justify-content: center;
 }
 
 @media (max-width: 1024px) {

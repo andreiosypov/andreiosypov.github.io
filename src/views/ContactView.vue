@@ -29,7 +29,11 @@
 }
 
 .myPhoto {
-  max-width: 50vw;
+  max-width: 200px;
+}
+
+.contactInfo img {
+  max-width: 200px;
 }
 
 @media (max-width: 600px) {

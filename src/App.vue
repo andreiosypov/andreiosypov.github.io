@@ -84,7 +84,7 @@ nav a:first-of-type {
 
 .content {
   min-height: calc(100vh - 130px);
-  padding: 0 2rem;
+  padding: 0 2rem 100px 2rem;
 }
 
 @media (max-width: 800px) {

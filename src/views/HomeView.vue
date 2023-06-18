@@ -26,7 +26,6 @@ export default {
       this.loading = true;
       const storyblokApi = useStoryblokApi();
       const resp = await storyblokApi.get('cdn/stories/overview');
-      console.log(resp);
       const formattedPost = {
         title: resp.data.story.content.title,
         image: resp.data.story.content.image.filename,

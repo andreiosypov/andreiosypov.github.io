@@ -18,6 +18,32 @@ h1 {
   color: var(--color-heading);
 }
 
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--color-heading);
+}
+
+p {
+  margin-top: 20px;
+}
+
+blockquote {
+  color: var(--vt-c-green);
+  font-size: 20px;
+  background-color: var(--color-background-soft);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+blockquote::before {
+  content: '\201C';
+}
+
+blockquote::after {
+  content: '\201D';
+}
+
 .view {
   position: relative;
 }

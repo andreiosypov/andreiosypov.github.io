@@ -20,6 +20,12 @@ const router = createRouter({
       component: () => import('@/views/DevBlogView.vue'),
     },
     {
+      path: '/devblog/:post_slug',
+      name: 'post',
+      props: true,
+      component: () => import('@/components/Post.vue'),
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('@/views/ContactView.vue'),
