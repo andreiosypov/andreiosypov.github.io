@@ -28,6 +28,7 @@ export default {
 @media (max-width: 1024px) {
   .blog {
     justify-content: center;
+    margin: 0;
   }
 }
 </style>

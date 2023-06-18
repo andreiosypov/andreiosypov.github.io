@@ -1,7 +1,7 @@
 <template>
   <a :href="postUrl">
     <div class="postPreview">
-      <div>
+      <div class="image">
         <img :src="post.image" />
       </div>
       <div class="opening">
@@ -58,6 +58,15 @@ export default {
   color: var(--color-text);
 }
 
+.postPreview .opening h2 {
+  padding-top: 0;
+}
+
+.postPreview .image {
+  display: flex;
+  align-items: center;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -80,8 +89,9 @@ img {
 }
 
 @media (max-width: 600px) {
-  .postPreview .opening {
-    font-size: 12px;
+  .postPreview {
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
   }
 }
 </style>
