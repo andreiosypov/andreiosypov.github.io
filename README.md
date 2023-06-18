@@ -14,12 +14,12 @@ The [previous site](https://github.com/andreiosypov/andreiosypov.github.io-React
 
 ## Dev Goals
 
-Goals are listed in terms of priority.
+Current priorities remain a stable and fun User Experience on desktop and mobile site.
+
+Future goals are listed in terms of priority.
 
 1. ~~Transition the site to Vue 3.~~
 2. ~~Set up my dev blog on the site.~~
 3. Build all my own art/games gallery components.
 4. Experiment with Electron.
 5. Improve readme with images.
-
-testing
