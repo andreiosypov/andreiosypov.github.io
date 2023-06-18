@@ -1,0 +1,1 @@
+.contact{display:flex;place-items:center;flex-direction:column;gap:40px}.myPhoto,.contactInfo img{max-width:200px}@media (max-width: 600px){.contact{gap:10px}}
