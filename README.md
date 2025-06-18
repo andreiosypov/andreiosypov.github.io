@@ -1,5 +1,7 @@
 # Andrei Osypov Website
 
+![Framework](https://img.shields.io/badge/Vue3-gree)
+
 This repo is meant to host my [personal site](https://andreiosypov.github.io/). The primary goals of the site are:
 
 - To show my capabilities in UI/UX, particularly in the use of Javascript, HTML, and CSS.
