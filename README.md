@@ -41,11 +41,12 @@ Current priority is to maintain a stable and enjoyable User Experience on both t
 Future goals are listed in terms of priority:
 
 1. ~~Transition the site to Vue 3.~~
-2. ~~Set up my dev blog on the site.~~
-3. ~~Build all my own art gallery components.~~
-4. Build all my own game gallery components.
-5. Add a resume page.
-6. Add a Makefile for easy site updates.
-7. Mobile styling.
-8. Set up unit testing.
-9. Experiment with Electron.
+2. Transition to Typescript.
+3. ~~Set up my dev blog on the site.~~
+4. ~~Build all my own art gallery components.~~
+5. ~~Build all my own game gallery components.~~
+6. ~~Add a resume.~~
+7. ~~Add a Makefile for easy site updates.~~
+8. Mobile styling.
+9. Set up unit testing.
+10. Experiment with Electron.
