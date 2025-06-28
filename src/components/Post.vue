@@ -4,7 +4,7 @@
     <div class="opening">
       <!-- eslint-disable-next-line vue/no-v-html -->
       <div v-html="formatContent(loadedPost.summary)" />
-      <div>
+      <div class="image">
         <img :src="loadedPost.image" />
       </div>
     </div>
@@ -100,6 +100,12 @@ img {
 @media (max-width: 600px) {
   .post .opening {
     font-size: 14px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .post .opening .image {
+    padding: 0 30px;
   }
 }
 </style>

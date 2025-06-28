@@ -13,9 +13,10 @@
         </div>
         <nav class="navigationLinks">
           <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/artgallery">Art Gallery</RouterLink>
+          <RouterLink to="/games">Games</RouterLink>
+          <RouterLink to="/art">Art</RouterLink>
           <RouterLink to="/devblog">Dev Blog</RouterLink>
-          <RouterLink to="/contact">Contact</RouterLink>
+          <RouterLink to="/about">About</RouterLink>
         </nav>
         <RouterView class="content" />
         <FooterLayout />

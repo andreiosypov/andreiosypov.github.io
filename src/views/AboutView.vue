@@ -1,18 +1,14 @@
 <template>
-  <div class="contact view">
-    <h1>Contact Info</h1>
+  <div class="about view">
+    <h1>About</h1>
     <div class="myPhoto">
       <img height="200px" src="https://a.storyblok.com/f/138597/335x333/3bb626f610/andreiosypovcircle.png" alt="mobile" />
     </div>
     <div class="contactInfo">
-      <p>
-        Phone:
-        <img height="25px" src="https://a.storyblok.com/f/138597/438x70/c1584919df/mobile-phone-number.PNG" alt="mobile" />
-        (messages preferable)
-      </p>
-      <p>Email: <img src="https://a.storyblok.com/f/138597/229x19/80a2f7c97e/email2.PNG" alt="email" /></p>
+      <p><a href="https://drive.google.com/file/d/1isxftdErZg9h9kWogl9tQavZyVpwGsH1/view?usp=sharing">View Resume</a></p>
       <p>Linkedin: <a href="https://www.linkedin.com/in/andrei-osypov-53566016b">Andrei Osypov</a></p>
       <p>Github: <a href="https://github.com/andreiosypov/">andreiosypov</a></p>
+      <p>Itch: <a href="https://andreiosypov.itch.io/">andreiosypov</a></p>
       <p>Instagram: <a href="https://www.instagram.com/aosypov/">@aosypov</a></p>
     </div>
   </div>
@@ -21,7 +17,7 @@
 <script></script>
 
 <style>
-.contact {
+.about {
   display: flex;
   place-items: center;
   flex-direction: column;
@@ -37,7 +33,7 @@
 }
 
 @media (max-width: 600px) {
-  .contact {
+  .about {
     gap: 10px;
   }
 }

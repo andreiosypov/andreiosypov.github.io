@@ -10,9 +10,14 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/artgallery',
-      name: 'artgallery',
+      path: '/art',
+      name: 'art',
       component: () => import('@/views/ArtGalleryView.vue'),
+    },
+    {
+      path: '/games',
+      name: 'games',
+      component: () => import('@/views/GameGalleryView.vue'),
     },
     {
       path: '/devblog',
@@ -26,9 +31,9 @@ const router = createRouter({
       component: () => import('@/components/Post.vue'),
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('@/views/ContactView.vue'),
+      path: '/about',
+      name: 'about',
+      component: () => import('@/views/AboutView.vue'),
     },
     {
       path: '/404',
