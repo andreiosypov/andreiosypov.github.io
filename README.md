@@ -10,22 +10,20 @@ This repo is meant to host my [personal site](https://andreiosypov.github.io/). 
 - To host my resume, art gallery, games gallery, and dev blog.
 - To continue developing my dev skills.
 
-<!-- omit in toc -->
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
 - [Setup](#setup)
 - [Framework](#framework)
 - [Dev Goals](#dev-goals)
 
-
 ## Setup
 
 Please refer to the [Setup document](docs/setup.md) for detailed instructions on how to setup the dev environment.
 
-Once the environment has been set up, run the following command to get a local deployment of the site:
+Once the environment has been set up, run the following command to get a local deployment of the site (make commands do require a bash shell):
 
 ```bash
-$ npm run dev
+$ make local
 ```
 
 ## Framework
@@ -45,8 +43,9 @@ Future goals are listed in terms of priority:
 3. ~~Set up my dev blog on the site.~~
 4. ~~Build all my own art gallery components.~~
 5. ~~Build all my own game gallery components.~~
-6. ~~Add a resume.~~
-7. ~~Add a Makefile for easy site updates.~~
-8. Mobile styling.
-9. Set up unit testing.
-10. Experiment with Electron.
+6. ~~Build all my own TD project gallery components.~~
+7. ~~Add a resume.~~
+8. ~~Add a Makefile for easy site updates.~~
+9. Mobile styling.
+10. Set up unit testing.
+11. Experiment with Electron.

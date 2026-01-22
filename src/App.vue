@@ -14,8 +14,9 @@
         <nav class="navigationLinks">
           <RouterLink to="/">Home</RouterLink>
           <RouterLink to="/games">Games</RouterLink>
+          <RouterLink to="/td">TD</RouterLink>
           <RouterLink to="/art">Art</RouterLink>
-          <RouterLink to="/devblog">Dev Blog</RouterLink>
+          <RouterLink to="/devblog">Blog</RouterLink>
           <RouterLink to="/about">About</RouterLink>
         </nav>
         <RouterView class="content" />
