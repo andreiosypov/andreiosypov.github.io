@@ -33,7 +33,6 @@ export default {
         starts_with: 'td/',
         sort_by: 'content.order:asc',
       });
-      console.log(resp.data.stories);
       const formattedProjects = resp.data.stories.map((project) => ({
         name: project.name,
         client: project.content.client,
